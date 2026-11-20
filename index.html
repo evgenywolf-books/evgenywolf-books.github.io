@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Евгений Вольф — книги</title>
+<meta name="description" content="Евгений Вольф — хоррор, фантастика и исторические романы. Серия «Соседи»: «Отражение», «Восток», «Пересадка» и другие книги. Порядок чтения и ссылки на Литрес.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Евгений Вольф — книги">
+<meta property="og:description" content="Серия «Соседи» и другие книги. Порядок чтения и ссылки на Литрес.">
+<meta property="og:url" content="https://evgenywolf-books.github.io/">
+<meta property="og:locale" content="ru_RU">
+<link rel="canonical" href="https://evgenywolf-books.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230F1113'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' fill='%23E0A54A' text-anchor='middle'%3EВ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #0F1113;
+    --bg-2: #131518;
+    --card: #181B1F;
+    --line: #23272C;
+    --line-2: #3A3E44;
+    --text: #E8E6E1;
+    --text-2: #C9CBCF;
+    --muted: #9A9DA3;
+    --accent: #E0A54A;
+    --serif: 'PT Serif', Georgia, 'Times New Roman', serif;
+    --sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  .kicker {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 700; margin: 0; line-height: 1.1; }
+  h2 { font-size: clamp(32px, 5vw, 52px); }
+  p { margin: 0; }
+
+  /* header */
+  .top {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(15, 17, 19, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .top .wrap {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+    gap: 4px 24px; padding-top: 10px; padding-bottom: 10px;
+  }
+  .logo { font-family: var(--serif); font-weight: 700; font-size: 20px; text-decoration: none; padding: 8px 0; }
+  .nav { display: flex; flex-wrap: wrap; gap: 0 20px; font-size: 15px; }
+  .nav a { text-decoration: none; color: var(--text-2); padding: 10px 0; }
+  .nav a:hover { color: #fff; }
+
+  /* hero */
+  .hero { padding: 88px 0 96px; }
+  .hero .wrap { display: flex; flex-direction: column; gap: 24px; }
+  .hero h1 { font-size: clamp(46px, 9vw, 104px); line-height: 1; letter-spacing: -0.01em; }
+  .hero .lead { max-width: 640px; font-size: 20px; color: var(--text-2); }
+  .hero .quote { max-width: 640px; font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--accent); }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 48px; padding: 0 22px; border-radius: 2px;
+    font-weight: 600; text-decoration: none; font-size: 16px;
+  }
+  .btn-main { background: var(--accent); color: #111; }
+  .btn-main:hover { background: #ECB662; }
+  .btn-ghost { border: 1px solid var(--line-2); color: var(--text); font-weight: 500; }
+  .btn-ghost:hover { border-color: var(--muted); }
+  .btn-line { border: 1px solid var(--accent); color: var(--accent); font-weight: 500; min-height: 44px; }
+  .btn-line:hover { background: rgba(224, 165, 74, 0.1); }
+  .soon {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px;
+    background: #1E2125; color: var(--muted); border-radius: 2px; font-size: 15px;
+  }
+
+  section { border-top: 1px solid var(--line); padding: 80px 0; }
+  section.alt { background: var(--bg-2); }
+  .head { display: flex; flex-direction: column; gap: 14px; max-width: 700px; margin-bottom: 44px; }
+  .head p.sub { font-size: 18px; color: var(--text-2); }
+
+  /* books */
+  .books { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 40px 32px; }
+  .book { display: flex; flex-direction: column; gap: 14px; }
+  .cover {
+    aspect-ratio: 2 / 3; padding: 24px; border: 1px solid #2C3238;
+    display: flex; flex-direction: column; justify-content: space-between;
+    overflow: hidden; position: relative;
+  }
+  .cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #111; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+  .links .sub-link { color: var(--text-2); font-size: 15px; padding: 10px 0; }
+  .links .sub-link:hover { color: #fff; }
+  .cover .c-author { font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; }
+  .cover .c-title { font-family: var(--serif); font-size: 32px; line-height: 1.05; font-weight: 700; }
+  .cover .c-mark { font-family: var(--mono); font-size: 12px; }
+  .meta { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+  .book h3 { font-size: 26px; }
+  .book .about { color: var(--text-2); }
+  .book div.about { display: flex; flex-direction: column; gap: 10px; }
+  .book div.about .end { font-family: var(--serif); font-style: italic; color: var(--accent); }
+  .book .action { margin-top: auto; padding-top: 4px; }
+
+  /* cover palettes */
+  .cv-metro { background: #171D22; color: #E8E6E1; }
+  .cv-metro .c-author, .cv-metro .c-mark { color: #93A1AD; }
+  .cv-ice { background: #DCE3E8; color: #12171B; border-color: #C2CCD3; }
+  .cv-ice .c-author, .cv-ice .c-mark { color: #3D4A55; }
+  .cv-spb { background: #221E17; color: #EDE4D3; border-color: #3A3226; }
+  .cv-spb .c-author, .cv-spb .c-mark { color: #B3A68E; }
+  .cv-ink { background: #1B1A1E; color: #E6E2EA; border-color: #2E2B33; }
+  .cv-ink .c-author, .cv-ink .c-mark { color: #A29CAB; }
+  .cv-cell { background: #1C1F1B; color: #E2E6DE; border-color: #2E332C; }
+  .cv-cell .c-author, .cv-cell .c-mark { color: #9AA392; }
+  .cv-winter { background: #ECEEF0; color: #15181B; border-color: #D3D7DB; }
+  .cv-winter .c-author, .cv-winter .c-mark { color: #4A525A; }
+  .cv-deep { background: #0E1A22; color: #DCE8EE; border-color: #1E2F3A; }
+  .cv-deep .c-author, .cv-deep .c-mark { color: #7FA2B5; }
+  .cv-bronze { background: #2A2017; color: #F0E3CF; border-color: #44362A; }
+  .cv-bronze .c-author, .cv-bronze .c-mark { color: #C3A57E; }
+  .cv-loko { background: #8E1B22; color: #FFFFFF; border-color: #A3262E; }
+  .cv-loko .c-author, .cv-loko .c-mark { color: #F3D4D6; }
+  .cv-fantasy { background: #19172A; color: #ECE7F7; border-color: #2D2A44; }
+  .cv-fantasy .c-author, .cv-fantasy .c-mark { color: #A69FC6; }
+
+  .rule { height: 2px; background: currentColor; opacity: 0.75; }
+  .stripe { display: flex; height: 18px; }
+  .stripe span { flex: 1; }
+
+  /* cycle divider */
+  .cycle {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 20px;
+    margin: 64px 0 32px; padding-top: 28px; border-top: 1px solid var(--line);
+  }
+  .cycle h3 { font-size: 28px; }
+  .cycle p { color: var(--text-2); }
+
+  /* reading order */
+  .order { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+  .order li { padding: 16px 18px 18px; background: var(--card); border-top: 2px solid var(--accent); }
+  .order li.later { border-top-color: var(--line-2); }
+  .order li.later .t { color: var(--text-2); }
+  .order .n { display: block; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+  .order .t { font-family: var(--serif); font-size: 20px; }
+  .note { margin-top: 28px; max-width: 700px; color: var(--text-2); }
+
+  .about-text { max-width: 760px; font-family: var(--serif); font-size: clamp(20px, 2.6vw, 25px); line-height: 1.5; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0 44px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .top { position: static; }
+    .hero { padding: 56px 0 64px; }
+    section { padding: 60px 0; }
+    .nav { gap: 0 16px; font-size: 14px; }
+    .books { gap: 44px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">Евгений Вольф</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#sosedi">«Соседи»</a>
+      <a href="#order">Порядок чтения</a>
+      <a href="#other">Другие книги</a>
+      <a href="#about">Об авторе</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <p class="kicker">Хоррор · фантастика · исторический роман</p>
+    <h1>Евгений Вольф</h1>
+    <p class="lead">Истории о том, что прячется в привычных местах: в вагоне метро, на полярной станции, на дне океана, в тёмном стекле напротив.</p>
+    <p class="quote">«Не смотри в тёмное стекло. Особенно когда свет падает сверху».</p>
+    <div class="btns">
+      <a class="btn btn-main" href="#sosedi">Начать с «Отражения»</a>
+      <a class="btn btn-ghost" href="https://www.litres.ru/author/evgeniy-volf/" target="_blank" rel="noopener">Все книги на Литрес</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ СЕРИЯ «СОСЕДИ» ============ -->
+<section id="sosedi">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">Серия · 9 книг</p>
+      <h2>Соседи</h2>
+      <p class="sub">Они живут рядом с нами давно и выглядят как мы. Выдать их может только отражение в тёмном стекле, если совпадут угол и свет.</p>
+    </div>
+
+    <div class="cycle">
+      <h3>Первый цикл</h3>
+      <p>Книги 1–3</p>
+    </div>
+
+    <div class="books">
+
+      <article class="book">
+        <div class="cover cv-metro">
+          <img src="https://cdn.litres.ru/pub/c/cover_415/74663612.jpg" alt="Обложка книги «Отражение»" loading="lazy" onerror="this.remove()">
+          <span class="c-author">ЕВГЕНИЙ ВОЛЬФ</span>
+          <div class="rule"></div>
+          <span class="c-title">Отражение</span>
+        </div>
+        <p class="meta">Книга 1 · Москва, наши дни · 16+</p>
+        <h3>Отражение</h3>
+        <div class="about">
+          <p>Пятнадцать лет Илья Корнеев стоит у рамки металлоискателя на старой станции глубокого заложения. Он пьёт ровно столько, чтобы не дрожали руки, и давно ничему не удивляется.</p>
+          <p>Пока однажды отражение пассажира в тёмном окне уходящего поезда не качается на полсекунды позже, чем сам пассажир.</p>
+          <p>Всё можно объяснить: похмелье, недосып, усталость. Камеры ничего не показывают, коллеги крутят пальцем у виска. Илья и сам хочет поверить, что это белая горячка, и бросает пить.</p>
+          <p>Но трезвость ничего не лечит. Она только делает картинку чётче.</p>
+        </div>
+        <div class="action links"><a class="btn btn-line" href="https://www.litres.ru/book/evgeniy-volf/otrazhenie-74663612/" target="_blank" rel="noopener">Читать на Литрес</a><a class="sub-link" href="https://www.litres.ru/audiobook/evgeniy-volf/otrazhenie-74663608/" target="_blank" rel="noopener">Аудиокнига</a></div>
+      </article>
+
+      <article class="book">
+        <div class="cover cv-ice">
+          <!-- <img src="vostok.jpg" alt="Обложка книги «Восток»"> -->
+          <span class="c-author">ЕВГЕНИЙ ВОЛЬФ</span>
+          <span class="c-mark">78°28′ ю. ш. · 1983</span>
+          <span class="c-title">Восток</span>
+        </div>
+        <p class="meta">Книга 2 · Антарктида, 1983 · приквел</p>
+        <h3>Восток</h3>
+        <p class="about">Станция Восток, самое холодное место на Земле. Зимовка 1983 года, полярная ночь, до Большой земли тысячи километров, и связь держится только по радио. Всё, что случилось той зимой, осталось в радиожурнале станции.</p>
+        <div class="action"><span class="soon">Скоро на Литрес</span></div>
+      </article>
+
+      <article class="book">
+        <div class="cover cv-spb">
+          <!-- <img src="peresadka.jpg" alt="Обложка книги «Пересадка»"> -->
+          <span class="c-author">ЕВГЕНИЙ ВОЛЬФ</span>
+          <div class="stripe" aria-hidden="true"><span style="border-top:2px solid currentColor"></span><span style="border-bottom:2px solid currentColor"></span><span style="border-top:2px solid currentColor"></span></div>
+          <span class="c-title">Пересадка</span>
+        </div>
+        <p class="meta">Книга 3 · Петербург · финал цикла</p>
+        <h3>Пересадка</h3>
+        <p class="about">Илья уезжает в Петербург, и всё, что он не успел закончить в Москве, едет вместе с ним. Последняя книга первого цикла и финал истории Ильи.</p>
+        <div class="action"><span class="soon">Скоро</span></div>
+      </article>
+
+    </div>
+
+    <div class="cycle">
+      <h3>Второй цикл</h3>
+      <p>Книги 4–6 · та же история, рассказанная с другой стороны стекла</p>
+    </div>
+
+    <div class="books">
+
+      <article class="book">
+        <div class="cover cv-ink">
+          <!-- <img src="pocherk.jpg" alt="Обложка книги «Почерк»"> -->
+          <span class="c-author">ЕВГЕНИЙ ВОЛЬФ</span>
+          <div class="rule"></div>
+          <span class="c-title">Почерк</span>
+        </div>
+        <p class="meta">Книга 4</p>
+        <h3>Почерк</h3>
+        <p class="about">Первая книга второго цикла. Знакомый читателю маршрут серии, пройденный через десятилетия глазами одного из соседей.</p>
+        <div class="action"><span class="soon">Скоро на Литрес</span></div>
+      </article>
+
+      <article class="book">
+        <div class="cover cv-cell">
+          <!-- <img src="yacheyka.jpg" alt="Обложка книги «Ячейка»"> -->
+          <span class="c-author">ЕВГЕНИЙ ВОЛЬФ</span>
+          <div class="rule"></div>
+          <span class="c-title">Ячейка</span>
+        </div>
+        <p class="meta">Книга 5</p>
+        <h3>Ячейка</h3>
+        <p class="about">Продолжение второго цикла.</p>
+        <div class="action"><span class="soon">Скоро</span></div>
+      </article>
+
+      <article class="book">
+        <div class="cover cv-winter">
+          <!-- <img src="zimovka.jpg" alt="Обложка книги «Зимовка»"> -->
+          <span class="c-author">ЕВГЕНИЙ ВОЛЬФ</span>
+          <div class="rule"></div>
+          <span class="c-title">Зимовка</span>
+        </div>
+        <p class="meta">Книга 6</p>
+        <h3>Зимовка</h3>
+        <p class="about">Завершение второго цикла.</p>
+        <div class="action"><span class="soon">В работе</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ПОРЯДОК ЧТЕНИЯ ============ -->
+<section id="order" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">С чего начать</p>
+      <h2>Порядок чтения</h2>
+    </div>
+    <ol class="order">
+      <li><span class="n">01</span><span class="t">Отражение</span></li>
+      <li><span class="n">02</span><span class="t">Восток</span></li>
+      <li><span class="n">03</span><span class="t">Пересадка</span></li>
+      <li class="later"><span class="n">04</span><span class="t">Почерк</span></li>
+      <li class="later"><span class="n">05</span><span class="t">Ячейка</span></li>
+      <li class="later"><span class="n">06</span><span class="t">Зимовка</span></li>
+    </ol>
+    <p class="note">«Восток» — приквел. Его можно прочитать первым, тогда события пойдут по хронологии, с 1983 года. Но «Отражение» лучше знакомит с миром серии.</p>
+  </div>
+</section>
+
+<!-- ============ ДРУГИЕ КНИГИ ============ -->
+<section id="other">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">Вне серии</p>
+      <h2>Другие книги</h2>
+    </div>
+    <div class="books">
+
+      <article class="book">
+        <div class="cover cv-deep">
+          <img src="https://cdn.litres.ru/pub/c/cover_415/73986871.jpg" alt="Обложка книги «Толща»" loading="lazy" onerror="this.remove()">
+          <span class="c-author">ЕВГЕНИЙ ВОЛЬФ</span>
+          <span class="c-mark">ГЛУБИНА 9500</span>
+          <span class="c-title">Толща</span>
+        </div>
+        <p class="meta">Научная фантастика · хоррор · 16+</p>
+        <h3>Толща</h3>
+        <p class="about">Глубина 9500 метров. Секретная станция «Мирный-12» построена на дне Тихого океана как титановая крепость. Когда на борт поднимают неизученный артефакт, защита даёт сбой, связь с материком пропадает, системы жизнеобеспечения отключаются одна за другой, и команда понимает, что враг уже внутри.</p>
+        <div class="action links"><a class="btn btn-line" href="https://www.litres.ru/book/evgeniy-volf/tolscha-73986871/" target="_blank" rel="noopener">Читать на Литрес</a><a class="sub-link" href="https://www.litres.ru/audiobook/evgeniy-volf/tolscha-73986866/" target="_blank" rel="noopener">Аудиокнига</a></div>
+      </article>
+
+      <article class="book">
+        <div class="cover cv-bronze">
+          <img src="https://cdn.litres.ru/pub/c/cover_415/73555808.jpg" alt="Обложка книги «Маятник эпох»" loading="lazy" onerror="this.remove()">
+          <span class="c-author">ЕВГЕНИЙ ВОЛЬФ</span>
+          <span class="c-mark">КАДЕШ — САРАЕВО</span>
+          <span class="c-title">Маятник эпох</span>
+        </div>
+        <p class="meta">Исторический роман · 12+</p>
+        <h3>Маятник эпох</h3>
+        <p class="about">Тысячи лет он умирает на войне и просыпается на следующей. Десять войн от Кадеша до Омахи, и в каждой у него новое тело и новый приказ. Последняя война — осаждённое Сараево, где сержант-миротворец должен смотреть и не вмешиваться.</p>
+        <div class="action"><a class="btn btn-line" href="https://www.litres.ru/book/evgeniy-volf/mayatnik-epoh-73555808/" target="_blank" rel="noopener">Читать на Литрес</a></div>
+      </article>
+
+      <article class="book">
+        <div class="cover cv-loko">
+          <img src="https://cdn.litres.ru/pub/c/cover_415/73923549.jpg" alt="Обложка книги «Красно-зелёное сердце»" loading="lazy" onerror="this.remove()">
+          <span class="c-author">ЕВГЕНИЙ ВОЛЬФ</span>
+          <div class="stripe" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#1E8A4C"></span></div>
+          <span class="c-title">Красно-зелёное сердце</span>
+        </div>
+        <p class="meta">Семейная сага · футбол</p>
+        <h3>Красно-зелёное сердце</h3>
+        <div class="about">
+          <p>Бетон. Фаеры. Сорванные в кровь глотки. И бесконечная преданность своим цветам.</p>
+          <p>Сага о четырех поколениях семьи, чьи судьбы намертво связаны с московским «Локомотивом». Машинист Иван Токарев видит в Лужниках, как его рабочая команда берет Кубок СССР. Его сын Лешка надевает связанную матерью первую красно-зеленую розетку и проливает кровь за команду на трибунах Черкизово. Внук Иван ведет Южную трибуну через золотые годы, войну с «пиджаками» и бойкоты. А правнук принимает эстафету в эпоху запретов Fan ID.</p>
+          <p>Уличные драки, электрички первой лиги, слезы чемпионств, дружба, которую испытывают должностью, и цена, которую за эту любовь платят близкие. Эпохи сменяются, а серебряные часы машиниста продолжают свой ход.</p>
+          <p>Это книга о братстве, которое система не смогла сломать. Клуб живет в людях, и их красно-зеленое сердце невозможно остановить.</p>
+          <p class="end">Тик-так. Их время обязательно придет.</p>
+        </div>
+        <div class="action links"><a class="btn btn-line" href="https://www.litres.ru/book/evgeniy-volf/krasno-zelenoe-serdce-73923549/" target="_blank" rel="noopener">Читать на Литрес</a><a class="sub-link" href="https://www.litres.ru/audiobook/evgeniy-volf/krasno-zelenoe-serdce-73923551/" target="_blank" rel="noopener">Аудиокнига</a></div>
+      </article>
+
+      <article class="book">
+        <div class="cover cv-fantasy">
+          <!-- <img src="asterra.jpg" alt="Обложка книги «Астерра»"> -->
+          <span class="c-author">ЕВГЕНИЙ ВОЛЬФ</span>
+          <span class="c-mark">КНИГА I</span>
+          <span class="c-title">Астерра</span>
+        </div>
+        <p class="meta">Эпическое фэнтези · цикл</p>
+        <h3>Астерра. Тень Девятого Узла</h3>
+        <p class="about">Первая книга большого фэнтезийного цикла.</p>
+        <div class="action"><span class="soon">В работе</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ОБ АВТОРЕ ============ -->
+<section id="about" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">Об авторе</p>
+    </div>
+    <p class="about-text">Евгений Вольф живёт в Москве и пишет хоррор, фантастику и исторические романы. Страшное у него начинается с бытовой детали: остановленного эскалатора, помех в эфире, лишней доли секунды в отражении.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Евгений Вольф</p>
+    <p><a href="https://www.litres.ru/author/evgeniy-volf/" target="_blank" rel="noopener">Страница автора на Литрес</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
